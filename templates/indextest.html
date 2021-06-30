@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KSV VoiceBiometric</title>
+
+    <center><p style="font-size:50px;color:blue;">Kaizen Secure Voiz</p></center>
+    <style>
+        #myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+        }
+        </style>
+
+</head>
+<body>
+    <center>
+    <form action="/login" method="post">
+        <label>User ID:</label>
+        <input type="text" placeholder="User ID" name="username">
+   
+        <button type="submit">Login</button>
+
+        {% if post %}
+         <p><strong>Please {{ post }}</strong> 
+        {% endif %}
+
+        <div id="myDIV">
+            <!-- <input type="image" src="static/recIcon.gif" /> -->
+            </div>
+    </form>
+</center>
+</body>
+</html>

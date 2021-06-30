@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    
+    
+    <title>KSV VoiceBiometric</title>
+
+    <center><p style="font-size:50px;color:blue;">Kaizen Secure Voiz</p></center>
+    <style>
+        #myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+        }
+        </style>
+
+</head>
+
+<body>
+  
+    <form action="/submit" method="POST">
+      <label for="firstname">User ID:</label>
+      <input type="text" id="firstname" name="fname" placeholder="User ID">
+      <button type="submit">Login</button>
+        
+        
+        <div id="myDIV">
+            <input type="image" src="static/recIcon.gif" />
+            </div>
+       
+        <label name="id"></label>
+        
+    </form>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+
+</html>

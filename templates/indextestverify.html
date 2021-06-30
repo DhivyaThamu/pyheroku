@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KSV VoiceBiometric</title>
+
+    <center><p style="font-size:50px;color:blue;">Kaizen Secure Voiz</p></center>
+    <style>
+        #myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+        }
+        </style>
+
+</head>
+<body>
+    <center>
+    <form action="/Verify" method="post">
+       
+
+        {% if post %}
+         <strong> <label >{{ post }} </label></strong>
+        {% endif %}
+
+        <div id="myDIV">
+            <input type="image" src="static/recIcon.gif" />
+
+            <p>Press mic icon & Read</p>
+            <p>Kaizen Secure Voiz is a new breed technology Start-up under Kaizen Technologies. The group, has been providing superior information technology, talent and solutions to private and public sector customers since 1995.A Kaizentek reputation as an IT expert is built on a decade of experience as a full-spectrum source for the IT community.</p>
+            </div>
+        
+        {% if res %}
+            <strong> <p>{{ res }} </p></strong>
+        {% endif %}
+
+    </form>
+</center>
+</body>
+</html>
