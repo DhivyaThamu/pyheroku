@@ -71,7 +71,6 @@ requests-file==1.5.1
 scikit-image==0.18.1
 simpleaudio==1.0.4
 simplegeneric==0.8.1
-sip==4.19.13
 smart-open==3.0.0
 sounddevice==0.4.1
 spacy==3.0.6
